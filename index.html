@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skins-FWO</title>
+    <style>
+        body {
+            background-color: black;    
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; padding: 20px; background-color: black; color: white;">
+        <!-- Menu com botões organizados em colunas -->
+        <div style="display: flex; justify-content: space-between; max-width: 600px; margin: 0 auto;">
+            <!-- Coluna Esquerda -->
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div class="dropdown">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Butcher</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="margin-top: 10px;">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Butcher (VIP)</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="margin-top: 10px;">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Butcher (ADM)</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna Central -->
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div class="dropdown">
+                    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Player</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="margin-top: 10px;">
+                    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Player (VIP)</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna Direita -->
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div class="dropdown">
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Knife</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="margin-top: 10px;">
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Knife (VIP)</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="margin-top: 10px;">
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Knife (ADM)</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                        <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">Sakura VIP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Imagem abaixo dos botões -->
+    <div class="image-container" style="text-align: center; margin-top: 20px;">
+        <img id="displayed-image" src="" alt="" style="max-width: 100%; height: auto;">
+    </div>
+
+    <script>
+        function loadImage(imagePath) {
+            console.log("Loading image: " + imagePath);
+            const imgElement = document.getElementById('displayed-image');
+            imgElement.src = imagePath;
+            imgElement.alt = "Loaded Image";
+        }
+    </script>
+</body>
+</html>
