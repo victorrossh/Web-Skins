@@ -1,150 +1,205 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skins</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col text-end">
-                <div class="btn-group dropstart">
-                    <button type="button" class="btn btn-secondary btn-custom btn-knife dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Knife
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_abstract.jpg')">Abstract</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_blue_ghost.jpg')">Blue Ghost</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_color.jpg')">Color</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_gonnacry.jpg')">Gonnaycry</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_hyperbeast.jpg')">Hyperbeast</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_kitty.jpg')">Kitty</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_linkin_park.jpg')">Linkin Park</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_redline.jpg')">Redline</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_snake.jpg')">Snake</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_steel.jpg')">Steel</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_thug_cat.jpg')">Thug Cat</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_default/knife_user_vulcan.jpg')">Vulcan</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col text-center">
-                <div class="watermark">
-                    <div class="crown"></div>
-                    <div class="watermark-text">FWO<br><span>Fast Way Only</span></div>
-                </div>
-            </div>
-            <div class="col text-start">
-                <div class="btn-group dropend">
-                    <button type="button" class="btn btn-secondary btn-custom btn-butcher-vip dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Butcher (VIP)
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_vip/but_vip_boris.jpg')">Boris</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_vip/but_vip_carbon.jpg')">Carbon</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_vip/but_vip_lion.jpg')">Lion</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_vip/but_vip_red_ghost.jpg')">Red Ghost</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_vip/but_vip_xiao.jpg')">Xiao</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col text-end">
-                <div class="btn-group dropstart">
-                    <button type="button" class="btn btn-secondary btn-custom btn-knife-vip dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Knife (VIP)
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_vip/knife_vip_ghost_red.jpg')">Red Ghost</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_vip/knife_vip_grizzly.jpg')">Grizzly</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_vip/knife_vip_hunter.jpg')">Hunter</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">King</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_vip/knife_vip_night.jpg')">Night</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_vip/knife_vip_nightraid.jpg')">Nightraid</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_vip/knife_vip_purple.jpg')">Purple</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_vip/knife_vip_sakura.jpg')">Sakura</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col text-center">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-secondary btn-custom btn-player-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Player
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./player/player.png')">Teste</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col text-start">
-                <div class="btn-group dropend">
-                    <button type="button" class="btn btn-secondary btn-custom btn-butcher dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Butcher
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_default/but_user_black_wolf.jpg')">Black Wolf</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_default/but_user_rainbow.jpg')">Rainbow</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_default/but_user_rias.jpg')">Rias</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col text-end">
-                <div class="btn-group dropstart">
-                    <button type="button" class="btn btn-secondary btn-custom btn-knife-adm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Knife (ADM)
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_adm/knife_adm_ahegao.jpg')">Ahegao</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_adm/knife_adm_black.jpg')">Black</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_adm/knife_adm_fire_flower.jpg')">Fire Flower</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_adm/knife_adm_ice_phoenix.jpg')">Ice Phoenix</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_adm/knife_adm_iridescent.jpg')">Iridescent</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_adm/knife_adm_moon.jpg')">Moon</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_adm/knife_adm_neo_noir.jpg')">Neo Noir</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./knife_adm/knife_adm_printstream.jpg')">Printstream</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col text-center">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-secondary btn-custom btn-player-adm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Player (VIP)
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./player_vip/player_vip1.png')">Joker</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col text-start">
-                <div class="btn-group dropend">
-                    <button type="button" class="btn btn-secondary btn-custom btn-butcher-adm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Butcher (ADM)
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_adm/but_adm_blood_khalifa.jpg')">Blood Khalifa</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_adm/but_adm_fade.jpg')">Fade</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_adm/but_adm_hyperbeast.jpg')">Hyperbeast</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_adm/but_adm_iridescent.jpg')">Iridescent</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_adm/but_adm_neo_noir.jpg')">Neo Noir</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="loadImage('./butcher_adm/but_adm_zoro.jpg')">Zoro</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col text-center">
-                <div id="image-container" class="mt-4"></div>
-            </div>
-        </div>
-    </div>
+<html lang="en">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Skins</title>
+  <style>
+    * {
+      background-color: black;
+      color: white;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      border-radius: 8px;
+      padding: 5px 0;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #444;
+      transition: background-color 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #555;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown button {
+      background-color: #1f2937;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .dropdown button:hover {
+      background-color: #374151;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .dropdown-content img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .player-image {
+      width: 150px;
+      /* Tamanho da imagem */
+      height: auto;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-red-400 text-center py-0">
+    <div class="flex justify-center">
+      <!-- Menu botões organizados em colunas -->
+      <div class="grid grid-cols-3">
+        <!-- Coluna Esquerda -->
+        <div class="grid grid-rows-3 justify-start">
+          <div class="dropdown dropdown-drown">
+            <button>Butcher</button>
+            <div class="dropdown-content">
+              <a href="#" onclick="loadImage('./butcher_default/but_user_black_wolf.jpg')">Black Wolf</a>
+              <a href="#" onclick="loadImage('./butcher_default/but_user_rainbow.jpg')">Rainbow</a>
+              <a href="#" onclick="loadImage('./butcher_default/but_user_rias.jpg')">Rias</a>
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-drown">
+            <button>Butcher (VIP)</button>
+            <div class="dropdown-content">
+              <a href="#" onclick="loadImage('./butcher_vip/but_vip_boris.jpg')">Boris</a>
+              <a href="#" onclick="loadImage('./butcher_vip/but_vip_carbon.jpg')">Carbon</a>
+              <a href="#" onclick="loadImage('./butcher_vip/but_vip_lion.jpg')">Lion</a>
+              <a href="#" onclick="loadImage('./butcher_vip/but_vip_red_ghost.jpg')">Red Ghost</a>
+              <a href="#" onclick="loadImage('./butcher_vip/but_vip_xiao.jpg')">Xiao</a>
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-drown">
+            <button>Butcher (ADM)</button>
+            <div class="dropdown-content">
+              <a href="#" onclick="loadImage('./butcher_adm/but_adm_blood_khalifa.jpg')">Blood Khalifa</a>
+              <a href="#" onclick="loadImage('./butcher_adm/but_adm_fade.jpg')">Fade</a>
+              <a href="#" onclick="loadImage('./butcher_adm/but_adm_hyperbeast.jpg')">Hyperbeast</a>
+              <a href="#" onclick="loadImage('./butcher_adm/but_adm_iridescent.jpg')">Iridescent</a>
+              <a href="#" onclick="loadImage('./butcher_adm/but_adm_neo_noir.jpg')">Neo Noir</a>
+              <a href="#" onclick="loadImage('./butcher_adm/but_adm_zoro.jpg')">Zoro</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna Central -->
+        <div class="grid grid-rows-3 justify-center">
+
+          <img src="fwo.jpg" alt="Central Image" class="player-image">
+
+          <div class="dropdown dropdown-down">
+            <button>Player</button>
+            <div class="dropdown-content">
+              <a href="#" onclick="loadImage('./player/player.png')">Teste</a>
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-down">
+            <button>Player (VIP)</button>
+            <div class="dropdown-content">
+              <a href="#" onclick="loadImage('./player_vip/player_vip1.png')">Joker</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna Direita -->
+        <div class="grid grid-rows-3 justify-end">
+
+          <div class="dropdown dropdown-down">
+            <button>Knife</button>
+            <div class="dropdown-content">
+              <a href="#" onclick="loadImage('./knife_default/knife_user_abstract.jpg')">Abstract</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_blue_ghost.jpg')">Blue Ghost</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_color.jpg')">Color</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_gonnacry.jpg')">Gonnaycry</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_hyperbeast.jpg')">Hyperbeast</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_kitty.jpg')">Kitty</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_linkin_park.jpg')">Linkin Park</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_redline.jpg')">Redline</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_snake.jpg')">Snake</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_steel.jpg')">Steel</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_thug_cat.jpg')">Thug Cat</a>
+              <a href="#" onclick="loadImage('./knife_default/knife_user_vulcan.jpg')">Vulcan</a>
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-down">
+            <button>Knife (VIP)</button>
+            <div class="dropdown-content">
+              <a href="#" onclick="loadImage('./knife_vip/knife_vip_ghost_red.jpg')">Red Ghost</a>
+              <a href="#" onclick="loadImage('./knife_vip/knife_vip_grizzly.jpg')">Grizzly</a>
+              <a href="#" onclick="loadImage('./knife_vip/knife_vip_hunter.jpg')">Hunter</a>
+              <a href="#" onclick="loadImage('./knife_vip/knife_vip_king.jpg')">King</a>
+              <a href="#" onclick="loadImage('./knife_vip/knife_vip_night.jpg')">Night</a>
+              <a href="#" onclick="loadImage('./knife_vip/knife_vip_nightraid.jpg')">Nightraid</a>
+              <a href="#" onclick="loadImage('./knife_vip/knife_vip_purple.jpg')">Purple</a>
+              <a href="#" onclick="loadImage('./knife_vip/knife_vip_sakura.jpg')">Sakura</a>
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-down">
+            <button>Knife (ADM)</button>
+            <div class="dropdown-content">
+              <a href="#" onclick="loadImage('./knife_adm/knife_adm_ahegao.jpg')">Ahegao</a>
+              <a href="#" onclick="loadImage('./knife_adm/knife_adm_black.jpg')">Black</a>
+              <a href="#" onclick="loadImage('./knife_adm/knife_adm_fire_flower.jpg')">Fire Flower</a>
+              <a href="#" onclick="loadImage('./knife_adm/knife_adm_ice_phoenix.jpg')">Ice Phoenix</a>
+              <a href="#" onclick="loadImage('./knife_adm/knife_adm_iridescent.jpg')">Iridescent</a>
+              <a href="#" onclick="loadImage('./knife_adm/knife_adm_moon.jpg')">Moon</a>
+              <a href="#" onclick="loadImage('./knife_adm/knife_adm_neo_noir.jpg')">Neo Noir</a>
+              <a href="#" onclick="loadImage('./knife_adm/knife_adm_printstream.jpg')">Printstream</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Imagem abaixo dos botões -->
+  <div class="image-container text-center mt-5">
+    <img id="displayed-image" src="" alt="" class="mx-auto" style="max-width: 100%; height: auto;">
+  </div>
+
+  <script>
+    function loadImage(imagePath) {
+      console.log("Loading image: " + imagePath);
+      const imgElement = document.getElementById('displayed-image');
+      imgElement.src = imagePath;
+      imgElement.alt = "Loaded Image";
+      imgElement.classList.add('border-4', 'border-white', 'rounded-lg');
+    }
+  </script>
 </body>
+
 </html>
